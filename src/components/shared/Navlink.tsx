@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import React from 'react';
 
 
-const Navlink = ({ href, children }) => {
+const Navlink = ({ href, children }: { href: string, children: string }) => {
     const pathName = usePathname();
     const activePath = href === pathName
     return (

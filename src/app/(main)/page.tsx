@@ -23,13 +23,13 @@ const HomePage = async () => {
 
   return (
     <div className='grid grid-cols-12 container gap-3 mx-auto'>
-      
-      <div className='col-span-3 bg-gray-400'>
+
+      <div className='col-span-3 bg-gray-400 p-2'>
         <p>All Categories</p>
 
-        <ul>
+        <ul className=' flex flex-col gap-3'>
           {categories.news_category.map((category) => (
-            <li key={category.category_id}>
+            <li className=' bg-slate-100 p-2 rounded-md font-bold text-center' key={category.category_id}>
               {category.category_name}
             </li>
           ))}
