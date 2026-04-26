@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '@/assets/logo.png'
 import Image from 'next/image';
-import { compareAsc, format } from "date-fns";
+import { format } from "date-fns";
 
 const Header = () => {
     return (
