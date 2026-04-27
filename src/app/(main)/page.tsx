@@ -1,6 +1,7 @@
+import LeftSidebar from '@/components/homepage/news/LeftSidebar';
 import React from 'react';
 
-type NewsCategory = {
+export type NewsCategory = {
   category_id: string;
   category_name: string;
 };
@@ -29,9 +30,7 @@ const HomePage = async () => {
 
         <ul className=' flex flex-col gap-3'>
           {categories.news_category.map((category) => (
-            <li className=' bg-slate-100 p-2 rounded-md font-bold text-center' key={category.category_id}>
-              {category.category_name}
-            </li>
+            <LeftSidebar key={category.category_id} category={category} />
           ))}
         </ul>
 
